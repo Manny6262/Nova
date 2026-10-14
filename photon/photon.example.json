@@ -1,0 +1,6 @@
+{
+  "projectId": "YOUR_OWN_PROJECT_ID",
+  "projectSecret": "REPLACE_LOCALLY",
+  "allowedUser": "+15550001111",
+  "assignedLine": "+15550002222"
+}

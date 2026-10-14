@@ -1,0 +1,17 @@
+# Core host plus optional tools. Model weights and runtimes are not bundled.
+-r requirements-test.txt
+Pillow==12.3.0
+pypdf==6.20.1
+beautifulsoup4==4.15.0
+ddgs==9.15.0
+websockets==15.0.1
+vosk==0.3.45
+kokoro-onnx==0.4.7
+piper-tts==1.7.0
+sounddevice==0.5.6
+soundfile==0.14.0
+faster-whisper==1.2.1
+pywinauto==0.6.9; sys_platform == "win32"
+pywin32==311; sys_platform == "win32"
+yfinance==1.5.2
+pywebview==6.2.1

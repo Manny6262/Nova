@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NovaNative (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "NovaNative (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
