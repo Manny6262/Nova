@@ -1,0 +1,47 @@
+/* Original Nova, refined. Presentation only; permissions and routing stay intact. */
+:root { --dim:#91a3bf; --edge:rgba(119,162,217,.19); }
+#space { opacity:.55; }
+#floor { opacity:.12; }
+.aurora { opacity:.18; }
+.shell { max-width:1440px; padding:20px 24px 16px; gap:12px; }
+#sidebar { min-width:0; background:rgba(9,14,29,.88); }
+.side-head { padding:8px 6px 12px; }
+#newChat { min-height:44px; background:linear-gradient(110deg,rgba(61,205,244,.13),rgba(125,103,234,.10)); }
+#sessionList .session { border-radius:10px; margin-bottom:4px; }
+#sessionList .session.active { background:rgba(107,140,230,.13); box-shadow:inset 3px 0 #81baff; }
+header { flex-wrap:wrap; flex-shrink:0; overflow:visible; gap:10px; padding:14px 16px; background:linear-gradient(120deg,rgba(18,28,47,.96),rgba(9,16,29,.95)); box-shadow:0 12px 40px #0003; }
+header::after { display:none; }
+.brand { flex:1 0 115px; }
+.brand h1 { font-size:23px; letter-spacing:.22em; }
+#brainSelect { max-width:220px; min-height:36px; font-size:12px; padding:8px; }
+.hdr-btn { flex-shrink:0; min-width:36px; min-height:36px; }
+#capsBtn,#voiceModeBtn { display:flex; width:auto; gap:7px; padding:0 10px; }
+.control-label { font:500 11px 'Segoe UI',sans-serif; white-space:nowrap; }
+#voiceModeBtn { border-color:rgba(119,145,255,.45); background:rgba(108,111,230,.12); }
+.stats { gap:12px; }
+#chat { background:linear-gradient(145deg,rgba(12,19,34,.92),rgba(7,13,25,.93)); border-radius:20px; box-shadow:0 20px 70px #0002; }
+.welcome { padding:36px 22px; gap:16px; }
+.welcome::before { opacity:.22; width:300px; height:300px; }
+.welcome-eyebrow { color:#89bcff; font-size:10px; letter-spacing:.23em; margin:0; position:relative; }
+.welcome h2 { font-size:clamp(24px,2.6vw,38px); letter-spacing:-.025em; text-transform:none; color:#edf3ff; margin:0; position:relative; }
+.welcome-guide { color:#9cacc5; font-size:14px; margin:0 0 14px; position:relative; }
+.chips { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); max-width:570px; width:100%; gap:10px; position:relative; }
+.chip { font:13px 'Segoe UI',sans-serif; color:#d8e6fc; text-align:left; padding:17px; border-radius:12px; border:1px solid var(--edge); background:rgba(31,47,74,.35); transition:background .18s,border-color .18s; }
+.chip:hover { background:rgba(68,89,145,.3); border-color:#81aafa; }
+.msg .bubble { line-height:1.7; }
+#composer { border-color:rgba(117,168,237,.4); background:rgba(13,23,40,.95); box-shadow:0 6px 30px #0004; }
+#composer:focus-within { border-color:#81baff; box-shadow:0 0 0 3px #81baff12; }
+#message { font-size:14px; }
+#armedBanner { line-height:1.5; padding:9px 14px; }
+.hint { text-transform:none; letter-spacing:.02em; font-size:10px; opacity:.8; }
+button:focus-visible,select:focus-visible,textarea:focus-visible { outline:2px solid #9cc4ff; outline-offset:3px; }
+@media(max-width:1500px) { .stats { display:none; } }
+@media(max-width:900px) { .shell { padding:10px; } header { gap:8px; } .brand-sub .flavor { display:none; } }
+@media(max-width:600px) { .chips { grid-template-columns:1fr; } .welcome { padding:20px 12px; } .welcome-guide { font-size:12px; } #brainSelect { max-width:180px; } }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; } #space { display:none; } }
+.voice-session-actions { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+.voice-session-actions button { border:1px solid var(--edge); background:#19253c; color:#dce9ff; border-radius:10px; padding:11px 16px; cursor:pointer; }
+#voiceCancelTask { color:#ffb1b1; }
+#realtimeVoiceDetail { max-width:680px; text-align:center; font-size:12px; line-height:1.6; color:var(--dim); }
+#voiceTranscript { min-height:30px; }
+#voiceReply { max-width:720px; max-height:160px; overflow:auto; color:#dce8ff; text-align:center; line-height:1.6; padding:8px 20px; }
